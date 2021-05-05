@@ -10,6 +10,7 @@
     <form class="kosik" th:action="@{/alkohol}" method="post">
         <h1>Objednávka alkoholu</h1>
         <label for="zbozi" class="radek">Zboží:</label>
+<!--       name="zbozi" níže můžeme vynechat, protože th:field ho automaticky nastaví -->
         <select id="zbozi" name="zbozi" th:field="${form.zbozi}">
             <option value=""></option>
             <option value="1">Veltlín – Sauvignon kabinet</option>
